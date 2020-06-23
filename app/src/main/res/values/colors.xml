@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_amber_900">#FF6F00</color>
+    <color name="color_gray_500">#9E9E9E</color>
+    <color name="color_orange_selected_tab">#E65100</color>
+    <color name="color_gray_unselected_tab">#757575</color>
+    <color name="color_button_gradient_start">#88A5A5A5</color>
+    <color name="color_button_gradient_center">#88BCBCBC</color>
+    <color name="color_button_gradient_end">#88D1D0D0</color>
+    <color name="color_broken_image">#9E9E9E</color>
+    <color name="color_background_button_favorite">#D50000</color>
+    <color name="color_background_button_family">#FFD600</color>
+    <color name="color_background_button_party">#2962FF</color>
+    <color name="color_shape_button">#B3000000</color>
+</resources>
