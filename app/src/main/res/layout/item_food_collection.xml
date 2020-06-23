@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_120"
+    android:layout_margin="@dimen/dp_2"
+    android:elevation="@dimen/dp_2"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:outlineProvider="bounds"
+    android:padding="@dimen/dp_8">
+
+    <ImageView
+        android:id="@+id/imageFoodCollection"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_image_food_detail_item"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFoodNameCollection"
+        style="@style/OtherListTextFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageFoodCollection"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFoodCollectionReadyMinutes"
+        style="@style/OtherListTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/imageClockFoodCollection"
+        app:layout_constraintStart_toEndOf="@+id/imageClockFoodCollection"
+        app:layout_constraintTop_toTopOf="@+id/imageClockFoodCollection" />
+
+    <TextView
+        android:id="@+id/textFoodCollectionPrice"
+        style="@style/OtherListTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePriceFoodCollection"
+        app:layout_constraintStart_toEndOf="@+id/imagePriceFoodCollection"
+        app:layout_constraintTop_toTopOf="@+id/imagePriceFoodCollection" />
+
+    <ImageView
+        android:id="@+id/imageClockFoodCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:tint="@color/color_amber_900"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFoodCollection"
+        app:layout_constraintStart_toStartOf="@+id/textFoodNameCollection"
+        app:srcCompat="@drawable/ic_clock" />
+
+    <ImageView
+        android:id="@+id/imagePriceFoodCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:contentDescription="@null"
+        android:tint="@color/color_amber_900"
+        app:layout_constraintBottom_toBottomOf="@+id/textFoodCollectionReadyMinutes"
+        app:layout_constraintStart_toEndOf="@+id/textFoodCollectionReadyMinutes"
+        app:layout_constraintTop_toTopOf="@+id/textFoodCollectionReadyMinutes"
+        app:srcCompat="@drawable/ic_price" />
+
+    <ImageButton
+        android:id="@+id/buttonDeleteFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:src="@drawable/ic_delete"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

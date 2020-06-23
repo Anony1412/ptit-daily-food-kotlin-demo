@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">FoodDaily</string>
+    <string name="facebook_app_id">670857986812648</string>
+    <string name="facebook_login_protocol_scheme">fb670857986812648</string>
+    <string name="title_loading_data">Loading data…</string>
+    <string name="title_error">Error: </string>
+    <string name="title_description_image_background_splash_1">SplashScreen background</string>
+    <string name="title_description_image_background_splash_2">SplashScreen background</string>
+    <string name="title_description_image_food_daily">Image FoodDaily</string>
+    <string name="title_description_icon_loading_data">Icon loading data</string>
+    <string name="title_daily_menu">Daily Menu</string>
+    <string name="title_image_food_detail_item">image food detail item</string>
+    <string name="title_other_food">OtherFood</string>
+    <string name="button_sort">Sort</string>
+    <string name="button_search_description">to search food</string>
+    <string name="title_home">Home</string>
+    <string name="title_collection">Collection</string>
+    <string name="title_cooking">Cooking</string>
+    <string name="title_food_detail">Food Detail</string>
+    <string name="title_search">Search</string>
+    <string name="value_time_required">\ minutes</string>
+    <string name="value_price_dollar">\ $</string>
+    <string name="notification_update_data">
+        Data is updating. Please let us know if something goes wrong
+    </string>
+    <string name="title_actionbar">ActionBar Title</string>
+    <string name="title_summary">Summary</string>
+    <string name="title_ingredients">Ingredients</string>
+    <string name="title_ready_minutes">ReadyMinutes</string>
+    <string name="title_estimate_price">Estimate Price</string>
+    <string name="title_start">Start</string>
+    <string name="title_food_name">Name</string>
+    <string name="title_updating">Updating…</string>
+    <string name="character_enter">\n</string>
+    <string name="character_minus">-\ </string>
+    <string name="title_choose_the_collection">Choose the Collection</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_family">Family</string>
+    <string name="title_party">Party</string>
+    <string name="title_congratulations">Congratulations!</string>
+    <string name="question_share_recipe">Are you want to share recipe\nto your friend?</string>
+    <string name="button_no_thank">No, thanks!</string>
+    <string name="button_share_on_facebook">Share on\nFacebook</string>
+    <string name="title_completed">Completed</string>
+    <string name="title_search_result">Result for</string>
+</resources>

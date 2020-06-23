@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_120"
+    android:layout_margin="@dimen/dp_2"
+    android:elevation="@dimen/dp_2"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:outlineProvider="bounds"
+    android:padding="@dimen/dp_8">
+
+    <ImageView
+        android:id="@+id/imageFoodOtherList"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_image_food_detail_item"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFoodNameOtherList"
+        style="@style/OtherListTextFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageFoodOtherList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOtherListReadyMinutes"
+        style="@style/OtherListTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/imageClockOtherList"
+        app:layout_constraintStart_toEndOf="@+id/imageClockOtherList"
+        app:layout_constraintTop_toTopOf="@+id/imageClockOtherList" />
+
+    <TextView
+        android:id="@+id/textOtherListPrice"
+        style="@style/OtherListTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePriceOtherList"
+        app:layout_constraintStart_toEndOf="@+id/imagePriceOtherList"
+        app:layout_constraintTop_toTopOf="@+id/imagePriceOtherList" />
+
+    <ImageView
+        android:id="@+id/imageClockOtherList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:tint="@color/color_amber_900"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFoodOtherList"
+        app:layout_constraintStart_toStartOf="@+id/textFoodNameOtherList"
+        app:srcCompat="@drawable/ic_clock" />
+
+    <ImageView
+        android:id="@+id/imagePriceOtherList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:contentDescription="@null"
+        android:tint="@color/color_amber_900"
+        app:layout_constraintBottom_toBottomOf="@+id/textOtherListReadyMinutes"
+        app:layout_constraintStart_toEndOf="@+id/textOtherListReadyMinutes"
+        app:layout_constraintTop_toTopOf="@+id/textOtherListReadyMinutes"
+        app:srcCompat="@drawable/ic_price" />
+</androidx.constraintlayout.widget.ConstraintLayout>

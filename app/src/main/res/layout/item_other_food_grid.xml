@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_152"
+    android:layout_height="@dimen/dp_152"
+    android:layout_margin="@dimen/dp_2"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_1"
+        android:background="@drawable/shape_rectangle_radius">
+
+        <ImageView
+            android:id="@+id/imageFoodOtherGrid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/title_image_food_detail_item"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageOtherGridBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.3"
+            android:background="@drawable/shape_food_image"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textFoodOtherGrid"
+            style="@style/OtherGridTextFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageOtherGridClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_2"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOtherGridBackground"
+            app:layout_constraintStart_toStartOf="@+id/imageOtherGridBackground"
+            app:srcCompat="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/textOtherGridReadyMinutes"
+            style="@style/OtherGridTextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOtherGridClock"
+            app:layout_constraintStart_toEndOf="@+id/imageOtherGridClock"
+            app:layout_constraintTop_toTopOf="@+id/imageOtherGridClock" />
+
+        <TextView
+            android:id="@+id/textOtherGridPrice"
+            style="@style/OtherGridTextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageOtherGridBackground"
+            app:layout_constraintEnd_toEndOf="@+id/imageOtherGridBackground" />
+
+        <ImageView
+            android:id="@+id/imageOtherGridPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/textOtherGridPrice"
+            app:layout_constraintEnd_toStartOf="@+id/textOtherGridPrice"
+            app:layout_constraintTop_toTopOf="@+id/textOtherGridPrice"
+            app:srcCompat="@drawable/ic_price" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

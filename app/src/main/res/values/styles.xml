@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreenTextView">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SplashScreenBackgroundImageView">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="HomeScreenTextView">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/color_amber_900</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+    </style>
+
+    <style name="DailyMenuTextDescription">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextFoodName">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="OtherListTextDescription">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="OtherListTextFoodName">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="OtherGridTextDescription">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="OtherGridTextFoodName">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="FoodDetailTitle">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/color_amber_900</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+    </style>
+
+    <style name="FoodDailyDescription">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">@dimen/dp_4</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+    </style>
+
+    <style name="ButtonChooseDialog">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="alpha">0.7</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowBackground">@drawable/shape_search_view</item>
+    </style>
+</resources>

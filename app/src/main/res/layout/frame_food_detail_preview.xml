@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:padding="@dimen/dp_8">
+
+    <ScrollView
+        android:id="@+id/scrollFoodDetailPreView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textFoodNameTitle"
+                style="@style/FoodDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_food_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textFoodNameDes"
+                style="@style/FoodDailyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:autoSizeMaxTextSize="@dimen/sp_32"
+                android:autoSizeMinTextSize="@dimen/sp_12"
+                android:autoSizeStepGranularity="@dimen/sp_2"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/title_food_name"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintBottom_toBottomOf="@+id/textFoodNameTitle"
+                app:layout_constraintStart_toEndOf="@+id/textFoodNameTitle"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textSummaryTitle"
+                style="@style/FoodDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_summary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textFoodNameDes" />
+
+            <TextView
+                android:id="@+id/textSummaryDes"
+                style="@style/FoodDailyDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/sp_32"
+                android:autoSizeMinTextSize="@dimen/sp_12"
+                android:autoSizeStepGranularity="@dimen/sp_2"
+                android:autoSizeTextType="uniform"
+                android:text="@string/title_summary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSummaryTitle"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textIngredient"
+                style="@style/FoodDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_ingredients"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSummaryDes" />
+
+            <TextView
+                android:id="@+id/textIngredientDes"
+                style="@style/FoodDailyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_ingredients"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textIngredient" />
+
+            <TextView
+                android:id="@+id/textReadyMinutes"
+                style="@style/FoodDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_ready_minutes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textIngredientDes" />
+
+            <TextView
+                android:id="@+id/textReadyMinutesDes"
+                style="@style/FoodDailyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/title_ready_minutes"
+                app:layout_constraintBottom_toBottomOf="@+id/textReadyMinutes"
+                app:layout_constraintStart_toEndOf="@+id/textReadyMinutes"
+                app:layout_constraintTop_toTopOf="@+id/textReadyMinutes" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                style="@style/FoodDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_estimate_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textReadyMinutesDes" />
+
+            <TextView
+                android:id="@+id/textPriceDes"
+                style="@style/FoodDailyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/title_estimate_price"
+                app:layout_constraintBottom_toBottomOf="@+id/textPrice"
+                app:layout_constraintStart_toEndOf="@+id/textPrice"
+                app:layout_constraintTop_toTopOf="@+id/textPrice" />
+
+            <ImageView
+                android:id="@+id/imageFoodDetail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_248"
+                android:layout_marginTop="@dimen/dp_16"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:padding="@dimen/dp_1"
+                android:scaleType="fitXY"
+                android:src="@drawable/suon_xao_chua_ngot_mien_bac"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPriceDes" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

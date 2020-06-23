@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/dp_1"
+        android:color="@color/color_shape_button" />
+    <solid android:color="@color/color_background_button_favorite" />
+    <corners android:radius="@dimen/dp_16" />
+</shape>
